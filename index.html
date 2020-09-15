@@ -1,54 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!--Sticky Footer Attributes-->
+  <style>
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      line-height: 60px;
+      background-color: #f5f5f5;
+    }
+  </style>
 </head>
 
 <body>
-    <!--Nav Bar linking to all three pages-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Brian Whitman</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html" >About</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    <!--container for about-->
-    <div class ="container">
-            <div class= "row">
-                <div class= "col-sm-12">
-                    <h1>About Me</h1>
-                </div>
-            </div>
-            <div class= "row">
-                <div class= "col-sm-5">
-                    <img src="https://lh3.googleusercontent.com/RaCg8dpiT3bg2_RCe7iIrtkn0LTl1kFsqHIUX6NXku_AjKQrIx7WtGK1iPxD6_d0nlDepmtEjavWgd6LQN_qesjxH11zX-wWvWX_U5IHZVR5hwQQGFmar1GyKgDlMd5X4-8o8UcFZJIBReZf7l57zhMb3tazYqpRcCbAwrssDojCLDKb3uc0S_-mfQH8_pgMESs7H5HxWPjPQbw9yNbiZaWKu6qm58K7BoMyQT8R0j78gzCUpHKR_9dXj6_3rEnw6G4oJdJv-KLZUhONuyz5Z7eVif1DdUoo7OR0OGqu1e5qsiO5ahgRVuvp8ZqwklddkM7yh2LTAjfT6gfE04wPDySqN5GpGi65YxKGEkUE5uhG_Q9ELilAWvraa0MxDOddI1ChAH3cX-FdZKvcHvOHibzrzvoV-tGkvjheHNJIjxkwUOL8opQ-nOALstT3P0byNIEdHGphyLUQnoMxwNsrjU38x7uNYjZvv0hcZFFj8xMj6smVyLORSh6SqU9e-Cq6fW1mIQcHPWrMeH3X0hSdYc5o1n3WLBjDYu1KlCy2BSO0VRRnpgXcpxqKQ4alW7ooPRVZSm6q-KvOQ25BX7Qbj_3o3R79EpyaBYEr4f6Phc85SRWwqTfd3SOt3PbCjyRYXarwW9vBt399rsyKyZksuRMLApPhtyffvhgNUVQ9JE1COevoBFFIPEj4kWm5BJ4=s959-no?authuser=0" 
-                    class="img-fluid" alt="Brian Whitman">
-            </div>
-            <div class= "col-sm-5">
-                 <p> I'm Brian Whitman, a developer in training. Welcome to my about page. Feel free to explore my work (there isn't much yet) or reach out to me using my contact form!</p>
-                <p> I'm 23 years old and I live in Palm City, Florida. I went to college at the Universrtiy of North Carolina at Wilmington, where I double majored in Psychology and Business Administration with a minor in Neuroscience.</p>
-                <p>I love to learn and am constantly trying new things. My current projects are learning programming and teaching myself guitar and piano. In my free time, I love to camp, kayak, exercise, and play video games.</p>
-                <p>Click a button below to access my Github or LinkedIn.</p>
-                <a href="https://github.com/BetterBusinessBrian" class="badge badge-info">GitHub</a>
-                <a href="https://www.linkedin.com/in/brian-m-whitman/" class="badge badge-info">LinkedIn</a>
-            </div>
+  <!--Nav Bar linking to all three pages-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Brian Whitman</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="portfolio.html">Portfolio </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">About</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+  <!--container for about-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>About Me</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-5">
+        <img
+          src="https://lh3.googleusercontent.com/RaCg8dpiT3bg2_RCe7iIrtkn0LTl1kFsqHIUX6NXku_AjKQrIx7WtGK1iPxD6_d0nlDepmtEjavWgd6LQN_qesjxH11zX-wWvWX_U5IHZVR5hwQQGFmar1GyKgDlMd5X4-8o8UcFZJIBReZf7l57zhMb3tazYqpRcCbAwrssDojCLDKb3uc0S_-mfQH8_pgMESs7H5HxWPjPQbw9yNbiZaWKu6qm58K7BoMyQT8R0j78gzCUpHKR_9dXj6_3rEnw6G4oJdJv-KLZUhONuyz5Z7eVif1DdUoo7OR0OGqu1e5qsiO5ahgRVuvp8ZqwklddkM7yh2LTAjfT6gfE04wPDySqN5GpGi65YxKGEkUE5uhG_Q9ELilAWvraa0MxDOddI1ChAH3cX-FdZKvcHvOHibzrzvoV-tGkvjheHNJIjxkwUOL8opQ-nOALstT3P0byNIEdHGphyLUQnoMxwNsrjU38x7uNYjZvv0hcZFFj8xMj6smVyLORSh6SqU9e-Cq6fW1mIQcHPWrMeH3X0hSdYc5o1n3WLBjDYu1KlCy2BSO0VRRnpgXcpxqKQ4alW7ooPRVZSm6q-KvOQ25BX7Qbj_3o3R79EpyaBYEr4f6Phc85SRWwqTfd3SOt3PbCjyRYXarwW9vBt399rsyKyZksuRMLApPhtyffvhgNUVQ9JE1COevoBFFIPEj4kWm5BJ4=s959-no?authuser=0"
+          class="img-fluid" alt="Brian Whitman">
+      </div>
+      <div class="col-sm-5">
+        <p> I'm Brian Whitman, a developer in training. Welcome to my about page. Feel free to explore my work (there
+          isn't much yet) or reach out to me using my contact form!</p>
+        <p> I'm 23 years old and I live in Palm City, Florida. I went to college at the Universrtiy of North Carolina at
+          Wilmington, where I double majored in Psychology and Business Administration with a minor in Neuroscience.</p>
+        <p>I love to learn and am constantly trying new things. My current projects are learning programming and
+          teaching myself guitar and piano. In my free time, I love to camp, kayak, exercise, and play video games.</p>
+        <p>Click a button below to access my Github or LinkedIn.</p>
+        <a href="https://github.com/BetterBusinessBrian" class="badge badge-info">GitHub</a>
+        <a href="https://www.linkedin.com/in/brian-m-whitman/" class="badge badge-info">LinkedIn</a>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">No sharks were harmed in the development of this website </span>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
